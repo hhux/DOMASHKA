@@ -1,7 +1,6 @@
 #сложите цифры целого числа
-n = input()
-x = str(n)
+n = str(input())
 c = 0
-for i in x:
+for i in n:
     c = int(i) + c
 print(c)
