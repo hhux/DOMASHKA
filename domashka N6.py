@@ -1,10 +1,9 @@
 def f(a):
     z = a.replace('-', '').replace('+', '').replace(' ', '')
-    for i in z:
-        if i.isdigit():
-            continue
-        else:
-            return 'Некорректный номер телефона'
-    return "Номер телефона состоит из цифр"
+    if z.isdigit():
+        return "Номер телефона состоит из цифр"
+    else:
+        return "Номер телефона введен некорректно"
+    return
 a = str(input())
 print(f(a))
