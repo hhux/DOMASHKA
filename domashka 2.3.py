@@ -1,4 +1,6 @@
-n = int(input())
-if n % 2 == 0:
-    for i in range(0, n, 2):
-        print(n * (n - i)* (n - i) )
+n = 5
+s = 1 # Переменная, которую будем умножать на i в цикле
+
+for i in range(1, n+1, 2):
+    s *= i
+print(s)
