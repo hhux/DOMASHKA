@@ -1,4 +1,4 @@
-def cash(deposit, persent, years):
+def cash(deposit, persent, years): # Рассчет суммы вклада
     itogo = deposit * (persent * 0.01) * years
     return itogo + deposit
 

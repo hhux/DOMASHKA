@@ -1,11 +1,8 @@
 def calc():
-    start = 100000
-    stop = 999999
-    cnt = 0
-    for i in range(start, stop+1, 1):
-        a = str(i)[:3] # первая половина номера билета
-        b = str(i)[3:] # вторая половина номера билета
-        if int(a[0]) + int(a[1]) + int(a[2]) == int(b[0]) + int(b[1]) + int(b[2]):
+    cnt = 0 # Счетчик счастливых билетов
+    for i in range(1000000):
+        s = str(i).zfill(6)
+        if int(s[0]) + int(s[1]) + int(s[2]) == int(s[3]) + int(s[4]) + int(s[5]): # Можно было срезом
             cnt += 1
     return cnt
 
